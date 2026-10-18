@@ -716,3 +716,19 @@ details img:hover {
     font-weight: bold;
   }
 }
+@media (max-width: 768px) {
+  /* Hace que las tarjetas se acomoden una debajo de otra */
+  .games-grid, .cards-container, .grid { 
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+
+  /* Ajusta el tamaño de cada tarjeta para que no se salga del teléfono */
+  .card, .game-card { 
+    width: 90% !important;
+    max-width: 350px !important;
+    margin: 10px auto !important;
+  }
+}
